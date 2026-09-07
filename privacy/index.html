@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELP Automation — Terms of Service</title>
+<title>ELP Automation — Privacy Policy</title>
 <style>
   :root {
     --bg: #f7f5f2;
@@ -37,7 +37,9 @@
     font-size: 16px;
     line-height: 1.65;
   }
-  .topbar { border-bottom: 1px solid var(--border); }
+  .topbar {
+    border-bottom: 1px solid var(--border);
+  }
   .topbar-inner {
     max-width: 720px;
     margin: 0 auto;
@@ -124,59 +126,64 @@
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand"><strong>ELP Automation</strong> · legal</div>
-    <div class="brand"><a href="privacy.html">← Privacy Policy</a></div>
+    <div class="brand"><a href="../terms/">Terms of Service →</a></div>
   </div>
 </div>
 
 <main>
   <div class="doc-header">
-    <p class="doc-eyebrow">Terms of Service</p>
-    <h1>Terms for ELP Automation</h1>
+    <p class="doc-eyebrow">Privacy Policy</p>
+    <h1>How ELP Automation handles data</h1>
     <p class="doc-meta">Effective September 6, 2026 · Applies to the ELP Automation app and its Content Posting API integration</p>
   </div>
 
   <div class="callout">
-    <strong>In short:</strong> This is a single-developer personal automation tool, not a public product. It only ever acts on accounts the developer owns and has explicitly authorized, and it operates within TikTok's own platform terms and Content Posting API guidelines at all times.
+    <strong>In short:</strong> ELP Automation is a single-developer personal project. It posts pre-generated videos to social accounts the developer owns and has explicitly connected. It does not collect data from any other person, does not sell or share data, and does not run ads or trackers.
   </div>
 
   <section class="clause">
-    <h2><span class="num">01</span> Scope</h2>
-    <p>These terms describe the operation of ELP Automation, a personal content pipeline that generates and publishes short-form video content to social accounts owned by its developer. This app is not distributed to, or used by, any party other than its developer.</p>
+    <h2><span class="num">01</span> What this app is</h2>
+    <p>ELP Automation is a personal content-automation system that generates short-form videos — history and science explainers, and game/TV lore breakdowns — from public, freely licensed sources (Wikipedia and Wikimedia Commons), narrated with local text-to-speech and captioned automatically. It publishes those videos to social accounts the developer personally owns and controls, including TikTok via the Content Posting API.</p>
+    <p>It is not offered as a service to the public. No third party creates an account, logs in, or provides data to this app.</p>
   </section>
 
   <section class="clause">
-    <h2><span class="num">02</span> Use of the TikTok Content Posting API</h2>
-    <p>ELP Automation's TikTok integration is used solely to publish video content that the developer has personally generated and reviewed the pipeline for, to an account the developer owns. It complies with TikTok's Developer Terms of Service and Content Posting API guidelines, including:</p>
+    <h2><span class="num">02</span> Data the TikTok integration accesses</h2>
+    <p>When the developer connects a TikTok account, the app requests only the scopes required to publish video content on that same account's behalf:</p>
     <ul>
-      <li>Publishing only original or appropriately sourced content (public-domain and freely licensed reference material)</li>
-      <li>Never using the integration to spam, mass-follow, mass-message, or artificially inflate engagement</li>
-      <li>Respecting TikTok's community guidelines for all published content</li>
+      <li>Basic profile information (to confirm which account is authorized)</li>
+      <li>Permission to upload video content to that account</li>
+    </ul>
+    <p>The app does not read direct messages, does not access other users' data, does not scrape follower or following lists, and does not collect analytics on viewers of the published content beyond what TikTok's own creator tools already show the account owner.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">03</span> Where data is stored</h2>
+    <p>Access tokens issued by TikTok are stored locally on the developer's own machine, are never committed to source control, and are never transmitted to any server other than TikTok's own API. Generated video files, scripts, and source material used to build each video are also stored locally.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">04</span> What this app does not do</h2>
+    <ul>
+      <li>Does not sell, rent, or share any data with third parties</li>
+      <li>Does not run advertising, analytics trackers, or cookies on this policy page</li>
+      <li>Does not collect data from anyone other than the developer's own connected accounts</li>
     </ul>
   </section>
 
   <section class="clause">
-    <h2><span class="num">03</span> Content sourcing</h2>
-    <p>Video narration and factual claims are grounded in Wikipedia article text; images are sourced from Wikimedia Commons under their respective open licenses. The app does not reproduce copyrighted narrative or artwork from any fictional franchise it may reference — lore-focused videos summarize publicly available, third-party encyclopedic descriptions of those franchises, not their copyrighted material directly.</p>
-  </section>
-
-  <section class="clause">
-    <h2><span class="num">04</span> No warranty</h2>
-    <p>This is a personal, actively evolving project provided with no warranty of uptime, accuracy, or fitness for any particular purpose. It is not a commercial product and carries no service-level commitment to anyone.</p>
-  </section>
-
-  <section class="clause">
-    <h2><span class="num">05</span> Changes</h2>
-    <p>These terms may change as the project evolves. The effective date at the top of this page reflects the most recent revision.</p>
+    <h2><span class="num">05</span> Revoking access</h2>
+    <p>The connected TikTok account's owner can revoke this app's access at any time from TikTok's own account settings under connected apps. Once revoked, the app can no longer publish to that account, and any locally stored token for it is discarded on the next run.</p>
   </section>
 
   <section class="clause">
     <h2><span class="num">06</span> Contact</h2>
-    <p>Questions about these terms can be sent to <a href="mailto:elpayne05@gmail.com">elpayne05@gmail.com</a>.</p>
+    <p>Questions about this policy can be sent to <a href="mailto:elpayne05@gmail.com">elpayne05@gmail.com</a>.</p>
   </section>
 </main>
 
 <footer>
-  ELP Automation — personal content pipeline · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  ELP Automation — personal content pipeline · <a href="privacy.html">Privacy Policy</a> · <a href="../terms/">Terms of Service</a>
 </footer>
 
 </body>
