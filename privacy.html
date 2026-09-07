@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELP Automation — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f7f5f2;
+    --surface: #ffffff;
+    --ink: #211f28;
+    --muted: #6c6875;
+    --accent: #6b4ba3;
+    --accent-soft: #efe9f7;
+    --border: #e2dfe6;
+    --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17151b;
+      --surface: #201d26;
+      --ink: #eae7f0;
+      --muted: #9c97a8;
+      --accent: #a586d9;
+      --accent-soft: #2c2536;
+      --border: #322e3c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .topbar {
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 24px 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .brand strong { color: var(--ink); font-weight: 600; }
+  .brand a { color: var(--accent); text-decoration: none; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  .doc-header { margin-bottom: 40px; }
+  .doc-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .doc-meta { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+  section.clause { margin-bottom: 32px; padding-top: 8px; }
+  section.clause h2 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  section.clause h2 .num { font-family: var(--font-mono); font-size: 14px; font-weight: 500; color: var(--accent); }
+  section.clause p { margin: 0 0 14px; max-width: 66ch; }
+  section.clause ul { margin: 0 0 14px; padding-left: 22px; max-width: 62ch; }
+  section.clause li { margin-bottom: 8px; }
+  section.clause p:last-child, section.clause ul:last-child { margin-bottom: 0; }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 16px 18px;
+    margin: 0 0 32px;
+    font-size: 14.5px;
+    color: var(--muted);
+  }
+  .callout strong { color: var(--ink); }
+  footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+  footer a { color: var(--accent); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><strong>ELP Automation</strong> · legal</div>
+    <div class="brand"><a href="terms.html">Terms of Service →</a></div>
+  </div>
+</div>
+
+<main>
+  <div class="doc-header">
+    <p class="doc-eyebrow">Privacy Policy</p>
+    <h1>How ELP Automation handles data</h1>
+    <p class="doc-meta">Effective September 6, 2026 · Applies to the ELP Automation app and its Content Posting API integration</p>
+  </div>
+
+  <div class="callout">
+    <strong>In short:</strong> ELP Automation is a single-developer personal project. It posts pre-generated videos to social accounts the developer owns and has explicitly connected. It does not collect data from any other person, does not sell or share data, and does not run ads or trackers.
+  </div>
+
+  <section class="clause">
+    <h2><span class="num">01</span> What this app is</h2>
+    <p>ELP Automation is a personal content-automation system that generates short-form videos — history and science explainers, and game/TV lore breakdowns — from public, freely licensed sources (Wikipedia and Wikimedia Commons), narrated with local text-to-speech and captioned automatically. It publishes those videos to social accounts the developer personally owns and controls, including TikTok via the Content Posting API.</p>
+    <p>It is not offered as a service to the public. No third party creates an account, logs in, or provides data to this app.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">02</span> Data the TikTok integration accesses</h2>
+    <p>When the developer connects a TikTok account, the app requests only the scopes required to publish video content on that same account's behalf:</p>
+    <ul>
+      <li>Basic profile information (to confirm which account is authorized)</li>
+      <li>Permission to upload video content to that account</li>
+    </ul>
+    <p>The app does not read direct messages, does not access other users' data, does not scrape follower or following lists, and does not collect analytics on viewers of the published content beyond what TikTok's own creator tools already show the account owner.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">03</span> Where data is stored</h2>
+    <p>Access tokens issued by TikTok are stored locally on the developer's own machine, are never committed to source control, and are never transmitted to any server other than TikTok's own API. Generated video files, scripts, and source material used to build each video are also stored locally.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">04</span> What this app does not do</h2>
+    <ul>
+      <li>Does not sell, rent, or share any data with third parties</li>
+      <li>Does not run advertising, analytics trackers, or cookies on this policy page</li>
+      <li>Does not collect data from anyone other than the developer's own connected accounts</li>
+    </ul>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">05</span> Revoking access</h2>
+    <p>The connected TikTok account's owner can revoke this app's access at any time from TikTok's own account settings under connected apps. Once revoked, the app can no longer publish to that account, and any locally stored token for it is discarded on the next run.</p>
+  </section>
+
+  <section class="clause">
+    <h2><span class="num">06</span> Contact</h2>
+    <p>Questions about this policy can be sent to <a href="mailto:elpayne05@gmail.com">elpayne05@gmail.com</a>.</p>
+  </section>
+</main>
+
+<footer>
+  ELP Automation — personal content pipeline · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
